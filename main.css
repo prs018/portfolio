@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+root {
+    --bg-image : "";
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: work Sans;
+    font-size: large;
+}
+
+.preload {
+    display: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--bg-image, url("./img/amanecer.svg")) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+#bioContainer {
+    width: 40%;
+    height: 40%;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    margin: 10% 30%;
+    color: white;
+    font-weight: 400;
+    padding: 15px;
+    display: grid;
+}
+
+#bioAvatar {
+    width: 15%;
+}
+
+#cloud-one, #cloud-two, #biker{
+    position: absolute;
+}
+
+#cloud-two{
+    right: 0;
+    top: -50px;
+}
+
+#biker {
+    bottom: -50px;
+}
+
+#mapContainer > div:hover {
+    cursor: pointer;
+}
+
+#mapContainer > div > div {
+    position: absolute;
+    
+}
+
+#mapMenu > div {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#map {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+#bio{
+    bottom: 120px;
+    right: 25px;
+}
+
+#github{
+    bottom: 85px;
+    right: 100px;
+}
+
+#linkedin{
+    bottom: 5px;
+    right: 120px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
